@@ -10,13 +10,13 @@ export default {
       },
       colors: {
         dark: "#212529",
-        light: "#FOF3FB",
+        light: "#F0F3FB",
         primary: {
           50: "#f1fcfa",
           100: "#cff8ef",
           200: "#9ff0e1",
           300: "#67e1cf",
-          400: "#32b9a9",
+          400: "#168b82",
           500: "#1fad9f",
           600: "#168b82",
           700: "#166f69",
@@ -43,7 +43,3 @@ export default {
   plugins: []
 };
 
-/**
- * "dark" : '#212529'
- * 'light' : '#FOF3FB'
- */

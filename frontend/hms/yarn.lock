@@ -368,7 +368,7 @@
   dependencies:
     clsx "^2.1.1"
 
-"@mantine/form@^7.16.2":
+"@mantine/form@^7.16.3":
   version "7.16.3"
   resolved "https://registry.npmjs.org/@mantine/form/-/form-7.16.3.tgz"
   integrity sha512-GqomUG2Ri5adxYsTU1S5IhKRPcqTG5JkPvMERns8PQAcUz/lvzsnk3wY1v4K5CEbCAdpimle4bSsZTM9g697vg==
