@@ -4,11 +4,13 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        body: 'Poppins, sans-serif', // Adds a new `font-display` class,
-        sans: 'Poppins, sans-serif',
-        'heading': 'Merriweather, serif',
+        body: "Poppins, sans-serif", // Adds a new `font-display` class,
+        sans: "Poppins, sans-serif",
+        heading: "Merriweather, serif"
       },
       colors: {
+        dark: "#212529",
+        light: "#FOF3FB",
         primary: {
           50: "#f1fcfa",
           100: "#cff8ef",
@@ -22,7 +24,7 @@ export default {
           900: "#174a47",
           950: "#072c2b"
         },
-        neutral:{
+        neutral: {
           50: "#f6f6f6",
           100: "#e7e7e7",
           200: "#d1d1d1",
@@ -30,7 +32,7 @@ export default {
           400: "#888888",
           500: "#6d6d6d",
           600: "#5d5d5d",
-          700: "#4b4b4b",
+          700: "#4f4f4f",
           800: "#3d3d3d",
           900: "#454545",
           950: "#000000"
@@ -40,3 +42,8 @@ export default {
   },
   plugins: []
 };
+
+/**
+ * "dark" : '#212529'
+ * 'light' : '#FOF3FB'
+ */
