@@ -7,12 +7,16 @@ import {
     IconTrash,
     IconArrowsLeftRight,
 } from '@tabler/icons-react';
+import { Avatar } from '@mantine/core';
 
 const ProfileMenu = () => {
     return (
         <Menu shadow="md" width={200}>
             <Menu.Target>
-                <Button>Toggle menu</Button>
+                <div className='flex items-center gap-3 cursor-pointer'>
+                    <span className='font-medium text-lg text-nuetral-900'>John Doe</span>
+                    <Avatar variant="filled" src="avtar.jpg" size="lg" alt="it's me" />
+                </div>
             </Menu.Target>
 
             <Menu.Dropdown>
