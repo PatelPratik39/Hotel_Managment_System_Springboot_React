@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping("/api/user")
 @Validated
-@CrossOrigin("*")
+@CrossOrigin
 @RequiredArgsConstructor
 public class UserAPI {
 
