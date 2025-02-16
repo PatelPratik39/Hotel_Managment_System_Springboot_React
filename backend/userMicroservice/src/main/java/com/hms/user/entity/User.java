@@ -1,6 +1,7 @@
 package com.hms.user.entity;
 
 import com.hms.user.dto.UserDTO;
+import com.hms.user.dto.Roles;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -20,7 +21,7 @@ public class User {
     @Column(unique = true)
     private String email;
     private String password;
-    private String role;
+    private Roles role;
 
     public UserDTO toUserDTO(){
         return new UserDTO(this.id, this.name, this.email, this.password, this.role);
