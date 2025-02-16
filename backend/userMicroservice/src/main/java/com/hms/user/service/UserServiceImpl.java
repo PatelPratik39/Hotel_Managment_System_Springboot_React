@@ -25,7 +25,7 @@ public class UserServiceImpl implements UserService {
     public void registerUser(UserDTO userDTO) throws HmsException {
         Optional<User> user = userRepository.findByEmail((userDTO.getEmail()));
         if(user.isPresent()){
-            throw new HmsException("USER_ALREADY_EXIST ❌");
+            throw new HmsException("USER_ALREADY_EXIST");
         }
         userDTO.setPassword(passwordEncoder.encode(userDTO.getPassword()));
         userRepository.save(userDTO.toUserEntity());
@@ -36,14 +36,14 @@ public class UserServiceImpl implements UserService {
         User user = userRepository.findByEmail(userDTO.getEmail()).orElseThrow(() -> new HmsException("USER_NOT_FOUND"));
 
         if(!passwordEncoder.matches(userDTO.getPassword(), user.getPassword())){
-            throw new HmsException("PASSWORD_INCORRECT ❌");
+            throw new HmsException("PASSWORD_INCORRECT");
         }
         return user.toUserDTO();
     }
 
     @Override
     public UserDTO getUserById(Long id) throws HmsException {
-        return userRepository.findById(id).orElseThrow(() -> new HmsException("USER_NOT_FOUND ❌")).toUserDTO();
+        return userRepository.findById(id).orElseThrow(() -> new HmsException("USER_NOT_FOUND")).toUserDTO();
     }
 
     @Override
