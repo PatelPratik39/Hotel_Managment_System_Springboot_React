@@ -5,6 +5,7 @@ import com.hms.user.entity.User;
 import com.hms.user.exception.HmsException;
 import com.hms.user.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
@@ -14,8 +15,10 @@ import java.util.Optional;
 @RequiredArgsConstructor
 public class UserServiceImpl implements UserService {
 
+    @Autowired
     private UserRepository userRepository;
 
+    @Autowired
     private PasswordEncoder passwordEncoder;
 
     @Override
