@@ -20,7 +20,6 @@ public class MyUserDetailService implements UserDetailsService {
     @Autowired
     private UserService userService;
 
-
     @Override
     public UserDetails loadUserByUsername(String email) throws UsernameNotFoundException {
         try {
